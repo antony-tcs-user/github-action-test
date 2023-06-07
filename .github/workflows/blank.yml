@@ -34,10 +34,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: -
-        if [ ${{github.event.inputs.monalisa}}];
+        run: |-
+        if [ ${{ github.event.inputs.choice }} = true ]:
         then
         echo Hello, world!
+        else
+         echo Hello, world!
         fi
 
       # Runs a set of commands using the runners shell
