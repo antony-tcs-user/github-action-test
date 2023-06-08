@@ -1,4 +1,3 @@
-Name: Starter Workflow Demo
 
 on:
   workflow_dispatch:
