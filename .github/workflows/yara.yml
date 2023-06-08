@@ -1,3 +1,5 @@
+name: tester
+
 on:
   workflow_dispatch:
     inputs:
@@ -14,7 +16,7 @@ on:
         description: Include 🎉🤣 emojis
       environment:
         type: environment
-name: tester
+
 
 jobs:
   build:
